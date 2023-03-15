@@ -53,7 +53,7 @@ class UpdateNote : AppCompatActivity() {
                     Toast.makeText(this, "Failed to update note", Toast.LENGTH_SHORT).show()
                 }
             }
-            
+
         }.addOnFailureListener { exception ->
             Log.d("updateNote", "Failed to get note data: $exception")
             Toast.makeText(this, "Failed to get note data", Toast.LENGTH_SHORT).show()
